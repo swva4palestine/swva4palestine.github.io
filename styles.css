@@ -1,49 +1,304 @@
+/* SITEWIDE VARIABLES */
+:root {
+    --green: #007C3A;
+    --white: #ddd;
+    --black: rgb(21, 1, 1);
+    --red: #D10B20;
+    /* --heading-font: Malayalam Sangam MN; */
+    /* --heading-font: barlow; */
+    /* --heading-font: symbol; */
+    --main-font: STIX Two Text;
+  }
+
+
+
+
+/* SITEWIDE STYLING */
 body {
-    font-family: sans-serif;
-    text-align: center;
-    background-color: #007C3A;
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
 }
 
-.container {
+.secondary-header {
+    background-color: var(--red);
+    height: 100%;
+    padding: 5px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+}
+
+.secondary-logo {
+    height: 4em;
+    display: block;
+    padding: .5%;
+}
+
+.secondary-nav {
+    margin: 0px 5% 0px 3%;
+}
+
+.secondary-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.secondary-nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.secondary-nav ul li a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.coming-soon-text {
+    text-align: center;
+    margin: auto;
+    font-size: 222%;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--green);
+    margin: 2% 10% 3% 10%;
+    text-align: center;
+    font-weight: bolder;
 }
 
 h1 {
-    font-size: 3em;
-    margin-bottom: .5em;
+    font-size: 3.5em;
 }
 
-p {
-    font-size: 1.2em;
-    margin-bottom: 2.5em;
-    color: white;
+h2 {
+    font-size: 2.5em;
 }
 
-.buttons {
+footer {
+    background-color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+/* HOMEPAGE STYLING */
+#mainpage-header {
+    background-color: var(--black);
+    font-size: 175%;
+    padding: 20px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mainpage-logo {
+    width: 225px;
+    padding: 5px 0 5px 5%;
+}
+
+#mainpage-nav {
+    margin: 0px 5% 0px 3%;
+}
+
+#mainpage-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
 }
 
-.button {
+#mainpage-nav ul li {
     display: inline-block;
-    margin: 0 1em 0 1em;
-    padding: 1em 2em;
-    border: 3px solid #ddd;
-    /* border-radius: 3px; */
-    background-color: #D10B20;
-    color: #000;
-    text-decoration: none;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 33%;
+    margin: 10px;
 }
 
-.button:hover {
-    background-color: #ddd;
+#mainpage-nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    color: var(--red);
 }
+
+#mainpage-content p {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    font-size: 135%;
+}
+
+.mainpage-news-date {
+    text-align: left;
+    margin-top: 3%;
+    margin-bottom: .25%;
+}
+
+.mainpage-news p {
+    width: 80%;
+    margin: auto;
+    text-align: left; 
+}
+
+
+
+
+/* VOLUNTEER PAGE STYLING */
+#contact-form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#contact-form textarea {
+    height: 100px;
+}
+
+#contact-form button {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+
+
+/* EVENTS PAGE STYLING */
+#upcoming-events {
+
+}
+
+.event-poster-container {
+
+}
+
+.event-poster {
+
+}
+
+
+
+
+/* SOCIAL MEDIA */
+.mainpage-social-links {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: auto;
+  padding-top: 3%;
+  padding-bottom: 7%;
+  width: 60%; /* Adjust width as needed */
+}
+
+.mainpage-social-links .icon {
+  width: 75%; /* Adjust size as needed */
+  height: 75%;
+  fill: #000; /* Change to white for white background */
+  transition: transform 0.2s ease-in-out;
+}
+
+.mainpage-social-links .icon:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+/* TABLET STYLING */
+@media screen and (max-width: 900px) {
+    #mainpage-header {
+        font-size: 100%;
+    }
+
+    #mainpage-h1 {
+        font-size: 2.25em;
+    }
+
+    #mainpage-h2 {
+        font-size: 2em;
+    }
+}
+
+/* PHONE STYLING */
+@media screen and (max-width: 600px) {
+    #mainpage-logo {
+      width: 50%;
+    }
+
+    #mainpage-header {
+        font-size: 100%;
+    }
+
+    #mainpage-nav {
+        margin-left: 10%;
+    }
+
+    #mainpage-nav li {
+        margin: 5px 5px 5px 15px;
+    }
+
+    #mainpage-h1 {
+        font-size: 1.75em;
+    }
+
+    #mainpage-h2 {
+        font-size: 1.75em;
+    }
+
+    #contact-form {
+        width: 90%;
+        padding: 10px;
+    }
+  }
+
+
+
+
+/* ACCESSIBILITY STYLING */
+.skip-to-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+/* Add focus styles for focusable elements */
+a, button, input {
+  outline: none;
+}
+
+a:focus, button:focus, input:focus {
+  box-shadow: 0 0 0 3px var(--green);
+}
+
+
+
+
+
+

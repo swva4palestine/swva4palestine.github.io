@@ -3,21 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>More Coming Soon...</title>
+    <title>SWVA for Palestine</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main class="container">
-        <img src="./images/logo.png" width="33%" alt="The Southwest Virginia Coalition for Palestine logo"/>
-        <h1 id="mainTitle">Thank you for standing with Palestine</h1>
-        <p id="mainDescription">Full website is coming soon, in the meantime, please follow us on social media.</p>
-        <article class="buttons">
-            <a href="https://instagram.com/swva.coalitionforpalestine?igshid=OGQ5ZDc2ODk2ZA==" class="button">Instagram</a>
-            <a href="https://www.snapchat.com/add/coalition4gaza" class="button">Snapchat</a>
-            <a href="https://www.facebook.com/groups/711856727204653/?ref=share" class="button">Facebook</a>
-            <a href="https://www.tiktok.com/@swva.palestine?_t=8hyU92ie1RS&_r=1" class="button">Tiktok</a>
+    <a class="skip-to-main" href="#main">Skip to main content</a>
+
+    <header id="mainpage-header">
+        <img id="mainpage-logo" src="./images/logo.png" alt="The Southwest Virginia Coalition for Palestine logo" />
+        <nav id="mainpage-nav">
+            <ul>
+                <li><a aria-label="Join the collective" href="./sub-pages/connect.html">Connect</a></li>
+                <li><a aria-label="Check out our upcoming events" href="./sub-pages/events.html">Events</a></li>
+                <li><a aria-label="Learn more about the BDS movement" href="https://bdsmovement.net">BDS Boycott Guide</a></li>
+                <!-- <li><a aria-label="Learn more about the BDS movement" href="./sub-pages/bds_boycott.html">BDS Boycott Guide</a></li> -->
+                <li><a aria-label="Learn how to donate towards our mission" href="./sub-pages/donate.html">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <h1 id="mainpage-h1">Welcome to Southwest Virginia Coalition for Palestine</h1>
+
+        <article id="mainpage-content">
+            <!-- Mission statement -->
+            <p>SWVA Coalition for Palestine is committed to solidarity with the Palestinian liberation struggle. 
+                We recognize that Zionism and the Israeli state it supports are both founded in ethnic cleansing 
+                and the removal of Palestinian people from their homeland. We recognize Israel's current actions 
+                in Gaza as overt genocide. We oppose genocide and ethnic cleansing in all its forms and 
+                manifestations. We are Palestinians, Jews, and people of many other nationalities and beliefs. 
+                We seek a return to the peaceful coexistence that Jewish, Muslim, and Christian people have 
+                shared in Palestine for many hundreds of years before the creation of the Israeli state, we seek 
+                the end of Israeli apartheid, we understand that anti-Zionism is not antisemitism, and we oppose 
+                both antisemitism and Islamophobia unconditionally. </p>
+            <br/>
+            <br/>
+            <p><b>Please join us on social media:</b></p>
+            <div class="mainpage-social-links">
+                <a href="https://www.instagram.com/your_username" target="_blank">
+                  <img class="icon" src="./images/Instagram.svg"/>
+                </a>
+                <a href="https://www.tiktok.com/@your_username" target="_blank">
+                    <img class="icon" src="./images/TikTok.svg"/>
+                </a>
+                <a href="https://www.snapchat.com/add/your_username" target="_blank">
+                    <img class="icon" src="./images/Snapchat.svg"/>
+                </a>
+              </div>
+        </article>
+
+        <!-- This should be updated into self populating blocks from a database -->
+        <h2 id="mainpage-h2">Urgent News</h2>
+        <article class="mainpage-news"> 
+            <h3 class="mainpage-news-date">DECEMBER 12th, 2023</h3>
+            <p> U.N. General Assembly passes resolution calling for a ceasefire in Gaza: 153 countries vote in favour of resolution, 23 abstain; U.S. and Israel vote against measure AND Occupied Palestinian territory and Israel: UN experts call for permanent ceasefire to protect rights and futures of women and girls.
+                <br/>
+                SOURCES: <a href="https://press.un.org/en/2023/ga12573.doc.htm#:~:text=On%2012%20December%2C%20the%20Assembly,and%20humanitarian%20access%20be%20ensured.">1</a>
+                        <a href="https://www.reuters.com/world/middle-east/un-general-assembly-set-demand-gaza-ceasefire-2023-12-12/">2</a>
+                        <a href="https://www.ohchr.org/en/press-releases/2023/12/occupied-palestinian-territory-and-israel-un-experts-call-permanent#:~:text=GENEVA%20(14%20December%202023)%20–,occupied%20Palestinian%20territory%20and%20Israel.">3</a>
+            </p>
+        </article>
+        <article class="mainpage-news"> 
+            <h3 class="mainpage-news-date">NOVEMBER 10th, 2023</h3>
+            <p> The World Health Organization adopted a resolution calling for immediate humanitarian access to Gaza in a rare special meeting of its executive board. One Child Killed Every Minute; Risk of Disease Growing; ‘Nowhere is Safe.’
+                <br/>
+                SOURCES: <a href="https://press.un.org/en/2023/sc15487.doc.htm">1</a>
+                        <a href="https://www.who.int/news/item/10-12-2023-who-s-executive-board-adopts-resolution-on-access-for-life-saving-aid-into-gaza-and-respect-for-laws-of-war">2</a>
+                        <a href="https://www.who.int/news/item/12-12-2023-who-calls-for-protection-of-humanitarian-space-in-gaza-following-serious-incidents-in-high-risk-mission-to-transfer-patients--deliver-health-supplies">3</a>
+            </p>
         </article>
     </main>
+    <footer>
+        <p>&copy; 2023 SWVA Coalition For Palestine. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
